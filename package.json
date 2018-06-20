@@ -37,7 +37,7 @@
     "publish": [{
       "provider": "github",
       "owner": "kiddodhaval",
-      "repo": "react-electron",
+      "repo": "react-electron"
     }],
     "mac": {
       "category": "testing.react",
