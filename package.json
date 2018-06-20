@@ -1,0 +1,50 @@
+{
+  "name": "Dhaval-App",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "electron-is-dev": "^0.3.0",
+    "electron-log": "^2.2.15",
+    "electron-updater": "^2.21.10",
+    "foreman": "^3.0.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-scripts": "1.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiddodhaval/react-electron.git"
+  },
+  "devDependencies": {
+    "electron": "^2.0.2",
+    "electron-builder": "^20.15.1"
+  },
+  "scripts": {
+    "dev": "nf start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "ebuild": "yarn build && node_modules/.bin/build",
+    "publish": "build -p always"
+  },
+  "description": "Dhaval-App",
+  "homepage": "./",
+  "main": "electron/main.js",
+  "build": {
+    "appId": "com.github.kiddodhaval.reactelectronupdater",
+    "publish": [{
+      "provider": "github",
+      "owner": "kiddodhaval",
+      "repo": "react-electron",
+    }],
+    "mac": {
+      "category": "testing.react",
+      "target": [
+        "zip",
+        "dmg"
+      ]
+    }
+  }
+}
