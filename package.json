@@ -1,6 +1,6 @@
 {
   "name": "Dhaval-App",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "dependencies": {
     "electron-is-dev": "^0.3.0",
