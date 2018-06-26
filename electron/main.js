@@ -111,8 +111,10 @@ app.on('window-all-closed', () => {
 //-------------------------------------------------------------------
 app.on('ready', function()  {
   autoUpdater.checkForUpdatesAndNotify();
+  setInterval(() => {
+    autoUpdater.checkForUpdatesAndNotify()
+  }, 60000)
 });
-
 //-------------------------------------------------------------------
 // Auto updates - Option 2 - More control
 //
